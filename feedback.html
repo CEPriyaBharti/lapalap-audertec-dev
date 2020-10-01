@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="./static/landing-contact.css">
+  <link rel="stylesheet" href="./static/header.css">
+  <link rel="stylesheet" href="./static/resources.css">
+  <link rel="stylesheet" href="./static/form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Feedback</title>
+
+</head>
+
+<body>
+
+  <header>
+    <div id="header-container">
+      <div class="logo-section">
+        <div class="logo">
+          <img src="./imgs/brand-logo.png" alt="" width=45px;>
+          <p class="logo-text">LAPALAP.com</p>
+        </div>
+        <div class="search-signup">
+          <div class="search">
+            <input type="text" placeholder="SEARCH ITEMS">
+            <button><i class="fa fa-search"></i></button>
+          </div>
+          <button class="sign-up-button">Sign in / sign up</button>
+        </div>
+      </div>
+      <div class="nav-section">
+        <nav class="desktop-nav">
+          <ul>
+            <li>Buy / Shop</li>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./partners.html">Partner With Lapalap</a></li>
+            <li>Newsroom</li>
+            <li>Careers</li>
+            <li><a href="./feedback.html">Feedback</a></li>
+          </ul>
+        </nav>
+        <a class="mobile-nav-button" onclick="open_nav()"><i class="fa fa-bars"></i></a>
+        <button>BUY / SHOP</button>
+        <div class=" cart-section">
+          <div class="three-line">
+            <img src="./imgs/three line-icon.jpg" alt="" width="20px" height='16px'>
+            <span id="three-line-number">0</span>
+          </div>
+          <div class="favorite-product">
+            <img src="./imgs/favorite-icon.png" alt="" width="20px" height='20px'>
+            <span id="favorite-product-number">0</span>
+          </div>
+          <div class="cart">
+            <img src="./imgs/cart-icon.jpg" alt="" width="16px" height='20px'>
+            <span id="cart-product-number">0</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <div id="mobile-nav">
+    <a class="nav-close-btn" onclick="close_nav()">&#10006</a>
+    <div class="logo">
+      <img src="./imgs/brand-logo.png" alt="" width=45px;>
+      <p class="logo-text">LAPALAP.com</p>
+    </div>
+    <ul>
+      <li>Buy / Shop</li>
+      <li>About</li>
+      <li>Partner With Lapalap</li>
+      <li>Newsroom</li>
+      <li>Landlord</li>
+      <li>Newsroom</li>
+      <li>Careers</li>
+      <li>Feedback</li>
+    </ul>
+  </div>
+  <!-- End of header -->
+
+  <script src="./js/main.js"></script>
+
+  <div id="Contact">
+
+    <h1 style="margin-bottom: 10px; color: rgb(70,70,70);; font-size: 44px">Contact us / Feedback</h1>
+    <div id="contact-inner-container">
+      <div class="form-container" style="padding-bottom: 50px">
+
+        <h2 style="color: rgb(100,100,100);font-size: 20px">Use this form for any sort of Requests and Questions</h2>
+        <form>
+          <div id="inputs">
+            <select name="contact-reason" required>
+              <option value=0>Contact Reason (Select One)</option>
+              <option value="Account Information">Account Information</option>
+              <option value="Becoming a Super Bussiness Associate">Super Business Associate</option>
+              <option value="Becoming a Bussiness Associate">Business Associate</option>
+              <option value="Becoming a Supplier">Product Supplier</option>
+              <option value="Becoming a Supplier">Capital Investor</option>
+              <option value="Becoming a Supplier">Joint Venture</option>
+              <option value="Careers Question">Careers/Job</option>
+              <option value="Careers Question">Online Business Promotion</option>
+              <option value="Careers Question">Branding Opportunities</option>
+              <option value="Careers Question">International/Cross Border</option>
+              <option value="Customer Service">Media Enquiry</option>
+              <option value="Customer Service">Customer Service</option>
+              <option value="General Enquiry">General Enquiry</option>
+              <option value="Order Information">Order Information</option>
+              <option value="Product Information">Product Information</option>
+              <option value="Trouble Signing in">Trouble Signing in</option>
+              <option value="Website Feedback">Website Feedback</option>
+              <option value="App Feedback">App Feedback</option>
+              <option value="App Feedback">Suggestions/Important Information</option>
+              <option value="App Feedback">Appreciation</option>
+              <option value="App Feedback">Others</option>
+
+            </select>
+            <br>
+
+
+          </div>
+
+          <div id="details">
+            <textarea required placeholder="  Details"
+              style="line-height: 1.5em;height: 170px;padding:10px;"></textarea>
+          </div>
+
+
+        </form>
+
+
+      </div>
+      <div class="address-container">
+        <h3>Address</h3>
+        <p>Lapalap.com<br>Chandigarh-15<br>India</p>
+        <br>
+        <h3>Phone & Email</h3>
+        <p>Phone:99 1413 1188<br>contact@lapalap.com</p>
+        <br>
+        <h3>Contact Timings</h3>
+        <p>Monday - Friday<br>10:00 am - 6:00 pm IST</p>
+      </div>
+
+    </div>
+    <hr>
+
+    <div id="new-changes">
+      <form>
+        <p>*Personal Details</p>
+        <div id="personal">
+          <div id="title" style="display: flex;">
+
+            <select name="*Title" required>
+              <option value=0>Title</option>
+              <option value="Mr.">Mr.</option>
+              <option value="Ms.">Ms.</option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="Dr.">Dr.</option>
+              <option value="Er.">Er.</option>
+
+            </select>
+
+
+            <input type="text" placeholder="*First Name" style="width:38%">
+
+
+            <input type="text" placeholder="*Last Name" style="width:48%">
+
+          </div>
+          <div id="ph-no" style="display: flex;">
+
+            <input type="text" placeholder="*Country-Code" style=" width: 11%">
+            <input type="Number" placeholder="*Phone Number 1" style=" width: 38%">
+
+            <input type="text" placeholder="Country-Code" style=" width: 11%">
+            <input type="Number" placeholder="Alt. Phone Number 2" style=" width: 36%">
+          </div>
+          <div><input type="email" placeholder="*E-mail Address" style=" width: 100%"></div>
+          <div id="address" style="display: flex;">
+            <input type="text" placeholder="*Address 1" style=" width:48%">
+            <input type="text" placeholder="Address 2" style=" width:48%">
+          </div>
+          <div id="city" style="display: flex;">
+
+            <input type="Number" placeholder="ZIP CODE" style=" width:16%">
+            <input type="text" placeholder="*CITY" style=" width:28%">
+
+            <input type="text" placeholder="*STATE" style=" width:48%">
+          </div>
+          <div><input type="text" placeholder="*Country" style=" width:48%"></div>
+        </div>
+        <p>Company Details (if any)</p>
+        <div id="comapny">
+          <div><input type="text" placeholder="Comapny Name" style=" width: 100%"></div>
+          <div id="designation" style="display: flex;">
+            <input type="text" placeholder="Your designation" style=" width:48%">
+            <input type="text" placeholder="Official Email Address" style=" width:48%">
+          </div>
+          <div id="url" style="display: flex;">
+            <input type="text" placeholder="Comapny URL" style=" width:48%">
+            <input type="text" placeholder="Type your Industry" style=" width:48%">
+          </div>
+          <div id="ph" style="display: flex;">
+
+            <input type="Number" placeholder="Country Code" style=" width:13%">
+            <input type="Number" placeholder="Phone Number 1" style=" width:31%">
+
+            <input type="Number" placeholder="Phone Number 2" style=" width:48%">
+
+          </div>
+          <div style="display:flex;flex-flow:column;align-items:center;">
+            <div style="padding-top:20px;display: flex;align-items: center; width: 100%; ">
+              <input type="checkbox" name="subscribe-for-mail" style="width:20px;height:20px; margin-right: 20px;">
+              <span style="font-size: 18px; height:30px">I would like to receive further communications from
+                Lapalap</span>
+            </div>
+            <div style="width: 100%;">
+              <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LdHb8wZAAAAAMNWlFGOS9jIbS3ZAWVkILfMqWqr">
+              </div>
+            </div>
+            <div style="align-items: center;justify-content: center;padding-top: 20px; width: 100%;">
+              <button type="submit"
+                style="width:24%; background:#333;color:#fefefe; padding: 12px;font-size: 20px">SUBMIT</button>
+            </div>
+          </div>
+
+
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+
+  <div class="app-showcase">
+    <div class="app-screenshots">
+      <div class="screenshot-container">
+        <img class="rotateimg20" src="./imgs/screeenshot1.PNG" alt="">
+        <img class="rotateimg20" src="./imgs/screenshot2.PNG" alt="">
+        <img class="rotateimg20" src="./imgs/screenshot3.PNG" alt="">
+        <br><br>screenshots
+      </div>
+      <div class="app-buttons">
+        <button>PLAY STORE</button>
+        <button>APP STORE</button>
+      </div>
+
+    </div>
+    <div class="app-description">
+      <div>
+        <h1>In order to recieve Goods<br> at Low Price; SignUp or<br>Download the app</h1>
+        <div class="key-points">
+          <div style="display: flex;"><span class="tick">&#10004</span><span>First in India to offer<br>Everithing
+              at
+              Low Price</span></div>
+          <div><span class="tick">&#10004</span><span>Zero Waste Warehouses</span></div>
+          <div><span class="tick">&#10004</span><span>100% Bio-Degradable Packing</span></div>
+        </div>
+
+        <div style="margin-top: 80px;">
+          <button>CONTINUE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-join-section">
+    <div class="social-responsibility">
+      <h1>Our Social responsibility</h1>
+      <p>We are steadfast in improving livelihoods across the nation. Explore our initiatives and see how to submit a
+        request for charity</p>
+      <button>APPLY NOW</button>
+    </div>
+    <div class="join-lapalap">
+      <h1>Join Lapalap</h1>
+      <p>We are growing pretty fast and alwats looking for exceptional people to join our team.<br>Know more about the
+        careers and find the job that suits you best.</p>
+      <button style="padding: 14px 40px;">CAREERS</button>
+    </div>
+  </div>
+  <div class="signup-lapalap-news">
+    <p style="text-align: center; margin-bottom: 20px;">Sign up for Lapalap news</p>
+    <form action="">
+      <input type="text" placeholder="EMAIL">
+      <input type="submit" value="Subscribe">
+    </form>
+  </div>
+  <div class="footer-links"
+    style="display: flex;padding: 48px 32px 30px 32px;justify-content: space-between; line-height: 2.4em;">
+    <div class="left-box" style="display: flex;">
+      <div class="resurces-links" style="margin-right:50px">
+        <p class="heading">Resources</p>
+        <a href="">Apply to be a S. Business Associate</a>
+        <a href="./BA.html">Apply to be a Business Associate</a>
+        <a href="">Apply to be a Supplier</a>
+        <a href="./feedback.html">Contact Us</a>
+        <a href="">Subscribe to Lapalap</a>
+      </div>
+      <div class="about-our-business">
+        <p class="heading">About Our Business</p>
+        <a href="">Lapalap Careers</a>
+        <a href="./partners.html">Locations-Current Serving Area</a>
+        <a href="">Newsroom</a>
+        <a href="">Social Responsibility</a>
+        <a href="">Lapalap leadership Team</a>
+      </div>
+    </div>
+    <div class="right-box" style="display: flex;">
+      <div class="see-brands" style="margin-right:70px">
+        <p class="heading">See Brands</p>
+        <a href="">New Products</a>
+        <a href="">Pre-Book Upcoming Products</a><br>
+        <a href="" class="color-highlight">Hot Locations open for SBA</a>
+        <a href="" class="color-highlight">Hot Locations open for BA</a>
+      </div>
+      <div class="shop-by-explore">
+        <p class="color-highlight heading">Shop/But/Explore Lapalap</p>
+        <a href="">COVID-19 Food & Packaging Essentials</a>
+        <a href="" style="color:#4f4d4e">Lapalap & COVID-19</a><br>
+        <div class="address">
+          <p>Radeus Ventures Private Limited</p>
+          <p>CIN:U74900CH2015PTC035747</p>
+          <p>Registered Office: 448, Level1,</p>
+          <p>Sector 15, Chandigarh 160015, INDIA</p>
+          <p>feedback@lapalap.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer style="display: flex; border-top: 1px solid #e7e8e9;position: relative;">
+    <p style="color: #969799; padding: 32px 48px 0 48px; font-size: 18px;">
+      © 2007-2020 Lapalap. All rights reserved.
+      <span style="color: #1e4c74">Powered by RVPL</span>
+    </p>
+    <div
+      style=" position: absolute; top: 0; width: 100%; display: flex; align-items: center; justify-content: center; ">
+      <div style="display: flex; align-items: center; margin-top: -33px; background: #fefefe; padding: 0 10px;">
+        <a href="index.html"><img src="./imgs/brand-logo.png" alt="" width="62px" /></a>
+        <h2 style="padding-left: 15px; font-size: 26px; font-weight: 600;">ALWAYS @ LOWEST PRICE</h2>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

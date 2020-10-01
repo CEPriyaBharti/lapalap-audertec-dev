@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./static/landing-contact.css" />
+  <link rel="stylesheet" href="./static/resources.css">
+  <link rel="stylesheet" href="./static/header.css">
+  <link rel="stylesheet" href="./static/ourpresence.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Partner with LAPALAP</title>
+  <style>
+    /* @media (max-width: 1050px) {
+      #partner-container {
+        width: 90%;
+      }
+    } */
+
+    #partner-container {
+      background: #f5f5f5;
+    }
+
+    @media (max-width: 896px) {
+      #partner-container {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 754px) {
+      .partner-row {
+        display: flex;
+        align-items: center;
+      }
+
+      .partner-row:nth-child(odd) {
+        flex-flow: column;
+      }
+
+      .partner-row:nth-child(even) {
+        flex-flow: column-reverse;
+      }
+
+      .partner-row>div {
+        width: 100%;
+      }
+
+      .partner-card {
+        padding-top: 90px;
+        padding-bottom: 90px;
+      }
+    }
+
+    @media(max-width: 500px) {
+      .partner-card {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
+
+    @media(max-width: 400px) {
+      .partner-card {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <div id="header-container">
+      <div class="logo-section">
+        <div class="logo">
+          <img src="./imgs/brand-logo.png" alt="" width=45px;>
+          <p class="logo-text">LAPALAP.com</p>
+        </div>
+        <div class="search-signup">
+          <div class="search">
+            <input type="text" placeholder="SEARCH ITEMS">
+            <button><i class="fa fa-search"></i></button>
+          </div>
+          <button class="sign-up-button">Sign in / sign up</button>
+        </div>
+      </div>
+      <div class="nav-section">
+        <nav class="desktop-nav">
+          <ul>
+            <li>Buy / Shop</li>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./partners.html">Partner With Lapalap</a></li>
+            <li>Newsroom</li>
+            <li>Careers</li>
+            <li><a href="./feedback.html">Feedback</a></li>
+          </ul>
+        </nav>
+        <a class="mobile-nav-button" onclick="open_nav()"><i class="fa fa-bars"></i></a>
+        <button>BUY / SHOP</button>
+        <div class=" cart-section">
+          <div class="three-line">
+            <img src="./imgs/three line-icon.jpg" alt="" width="20px" height='16px'>
+            <span id="three-line-number">0</span>
+          </div>
+          <div class="favorite-product">
+            <img src="./imgs/favorite-icon.png" alt="" width="20px" height='20px'>
+            <span id="favorite-product-number">0</span>
+          </div>
+          <div class="cart">
+            <img src="./imgs/cart-icon.jpg" alt="" width="16px" height='20px'>
+            <span id="cart-product-number">0</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <div id="mobile-nav">
+    <a class="nav-close-btn" onclick="close_nav()">&#10006</a>
+    <div class="logo">
+      <img src="./imgs/brand-logo.png" alt="" width=45px;>
+      <p class="logo-text">LAPALAP.com</p>
+    </div>
+    <ul>
+      <li>Buy / Shop</li>
+      <li>About</li>
+      <li>Partner With Lapalap</li>
+      <li>Newsroom</li>
+      <li>Landlord</li>
+      <li>Newsroom</li>
+      <li>Careers</li>
+      <li>Feedback</li>
+    </ul>
+  </div>
+  <!-- End of header -->
+
+
+  <script src="./js/main.js"></script>
+
+
+  <!-- Our Presense -->
+  <div id="our-presence">
+    <h1>Our Presence</h1>
+    <p style="color: #f08635;font-size: 20px;">Our Footprints</p>
+    <p style="padding-bottom: 70px;">30 Locations and Grouwing</p>
+    <div id="maps">
+      <div id="chandigarh-map">
+        <div class="map-row">
+          <div>PGI</div>
+          <div>12</div>
+          <div>11</div>
+          <div>10</div>
+          <div>9</div>
+          <div>8</div>
+          <div>7</div>
+          <div>26</div>
+          <div>26</div>
+        </div>
+        <div class="map-row">
+          <div>14</div>
+          <div>14</div>
+          <div>15</div>
+          <div>16</div>
+          <div>17</div>
+          <div>18</div>
+          <div>19</div>
+          <div>27</div>
+          <div>28</div>
+        </div>
+        <div class="map-row">
+          <div>25</div>
+          <div>25</div>
+          <div>24</div>
+          <div>23</div>
+          <div>22</div>
+          <div>21</div>
+          <div>20</div>
+          <div>30</div>
+          <div>29</div>
+        </div>
+        <div class="map-row">
+          <div>38W</div>
+          <div>38</div>
+          <div>37</div>
+          <div>36</div>
+          <div>35</div>
+          <div>34</div>
+          <div>33</div>
+          <div>32</div>
+          <div>31</div>
+        </div>
+        <div class="map-row">
+          <div>39</div>
+          <div>40</div>
+          <div>41</div>
+          <div>42</div>
+          <div>43</div>
+          <div>44</div>
+          <div>45</div>
+          <div>46</div>
+          <div>47</div>
+        </div>
+        <div class="map-row">
+          <div class="map-name chandigarh-name">Chandigarh</div>
+          <div>50</div>
+          <div>49</div>
+          <div>48</div>
+        </div>
+      </div>
+      <div id="punchkula-map">
+        <div class="map-row">
+          <div>1</div>
+          <div>2</div>
+          <div class="map-name panchkula-name">Punchkula</div>
+        </div>
+        <div class="map-row">
+          <div>6</div>
+          <div style="width:160px">5</div>
+          <div>4</div>
+          <div>3</div>
+        </div>
+        <div class="map-row">
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+          <div>21</div>
+        </div>
+        <div class="map-row">
+          <div>18</div>
+          <div>17</div>
+          <div>16</div>
+          <div>15</div>
+          <div>14</div>
+          <div>12A</div>
+          <div>20</div>
+        </div>
+        <div class="map-row">
+          <div>IA</div>
+          <div>IA</div>
+          <div>IA</div>
+          <div>20</div>
+        </div>
+      </div>
+      <div id="mohali-map">
+        <div class="map-row">
+          <div>1</div>
+          <div>2</div>
+          <div class="map-name mohali-name">Mohali</div>
+        </div>
+        <div class="map-row">
+          <div>6</div>
+          <div style="width:160px">5</div>
+          <div>4</div>
+          <div>3</div>
+        </div>
+        <div class="map-row">
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+          <div>21</div>
+        </div>
+        <div class="map-row">
+          <div>18</div>
+          <div>17</div>
+          <div>16</div>
+          <div>15</div>
+          <div>14</div>
+          <div>12A</div>
+          <div>20</div>
+        </div>
+        <div class="map-row">
+          <div>IA</div>
+          <div>IA</div>
+          <div>IA</div>
+          <div>20</div>
+        </div>
+      </div>
+      <p class="maps-msg">Live Areas in Map are in Green Color</p>
+    </div>
+    <div class="maps-paragraphs">
+      <p>Quick delivery and low transportation cost is essential to our business. We choose the locations of our
+        Stocking centers very carefully near the locations of our customers.</p>
+
+      <p>We also partner with people for becoming Super Business Associate or a Business Associate in new areas with the
+        best talent pool.</p>
+
+      <p>In case you are intrested in specific location, check out it's availability on the map; and/or connect with us
+        by clicking the requisite button bellow.</p>
+    </div>
+  </div>
+  <!-- Partners section -->
+  <div id="partner-container">
+    <hr />
+    <h1 style="text-align: center; padding: 100px 0 20px 0;font-size: 48px; color: rgb(88, 89, 91)">
+      Partner with Lapalap
+    </h1>
+    <div class="partner-row">
+      <div class="partner-logo">
+        <img src="./static/img/1logo.jpg" alt="partner1 logo" />
+      </div>
+      <div class="white-bg partner-card">
+        <h3>Become a Supplier</h3>
+        <p>
+          Are you ready to sell more of yout products or services?<br />Then
+          it's right time to become a Lapalap supplier
+        </p>
+        <button style="background: rgb(255, 242, 0)">APPLY NOW</button>
+      </div>
+    </div>
+    <div class="partner-row">
+      <div class="grey-bg partner-card">
+        <h3>Become a SUPER Business Associate</h3>
+        <p>
+          Can you Manage Huge Stocks, segregate and supply goods to BA on
+          behalf of Lapalap? Do you have investment potential of 10 to 15
+          Lakhs, ready to gain access to our product lineup?<br />Then it's
+          time to become a Lapalap SBA
+        </p>
+        <button style="background: rgb(3, 0, 0); color: white">
+          APPLY NOW
+        </button>
+      </div>
+      <div class="partner-logo">
+        <img src="./static/img/2logo.jpg" alt="partner2 logo" />
+      </div>
+    </div>
+    <div class="partner-row">
+      <div class="partner-logo">
+        <img src="./static/img/3logo.jpg" alt="partner3 logo" />
+      </div>
+      <div class="white-bg partner-card">
+        <h3>Become our Business Associate</h3>
+        <p>
+          Are you a Housewife, Teacher, College, Passout, Freelancer, Job
+          Seeker, Smart Worker, Bussiness Minded Person, Entrepreneur,
+          Opportunist and ready to gain access to Lapalap's product lineup?<br />
+          Then it's time to become a Lapalap BA.
+        </p>
+        <button style="background: rgb(166, 206, 57); color: #fff"><a href="./BA.html"
+            style="color:inherit; text-decoration:none;">
+            APPLY NOW
+          </a></button>
+      </div>
+    </div>
+    <div class="partner-row">
+      <div class="grey-bg partner-card">
+        <h3>Become a Consumer</h3>
+        <p>
+          If you are a decision maker for making Grocery purchases in your
+          home or/and workplace with jaw dropping prices, discount and
+          convenience of buying on phone and getting it delivered quickly due
+          to our hub-and-spoke model and micro warehousing space currently
+          operational across select locations in Tricity.
+        </p>
+        <button style="background: rgb(245, 130, 32); color: #fff">
+          JOIN NOW
+        </button>
+      </div>
+      <div class="partner-logo">
+        <img src="./static/img/4logo.jpg" alt="partner4 logo" />
+      </div>
+    </div>
+    <div class="partner-row" style="padding-bottom: 40px;">
+      <div class="partner-logo">
+        <img src="./static/img/5logo.jpg" alt="partner5 logo" />
+      </div>
+      <div class="white-bg partner-card">
+        <h3>If you are a Landlord</h3>
+        <p>
+          In case you wish to rent out and have a Shope or a Warehouse in open
+          areas in Lapalap's city lineup?<br />Then it's the right time to
+          contact Lapalap.
+        </p>
+        <button style="background: #300; color: rgb(86, 197, 208)">
+          APPLY NOW
+        </button>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+
+
+
+
+  <div class="app-showcase">
+    <div class="app-screenshots">
+      <div class="screenshot-container">
+        <img class="rotateimg20" style="left: -200px;" src="./imgs/screenshot1.PNG" alt="" width="200px" height="360px">
+        <img class="rotateimg20" style="left: -70px" src="./imgs/screenshot2.PNG" alt="" width="200px" height="360px">
+        <img class="rotateimg20" style="left: 60px" src="./imgs/screenshot3.PNG" alt="" width="200px" height="360px">
+        <br><br>screenshots
+      </div>
+      <div class="app-buttons">
+        <button>PLAY STORE</button>
+        <button>APP STORE</button>
+      </div>
+
+    </div>
+    <div class="app-description">
+      <div>
+        <h1>In order to recieve Goods<br> at Low Price; SignUp or<br>Download the app</h1>
+        <div class="key-points">
+          <div style="display: flex;"><span class="tick">&#10004</span><span>First in India to
+              offer<br>Everithing
+              at
+              Low Price</span></div>
+          <div><span class="tick">&#10004</span><span>Zero Waste Warehouses</span></div>
+          <div><span class="tick">&#10004</span><span>100% Bio-Degradable Packing</span></div>
+        </div>
+
+        <div style="margin-top: 80px;">
+          <button>CONTINUE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-join-section">
+    <div class="social-responsibility">
+      <h1>Our Social responsibility</h1>
+      <p>We are steadfast in improving livelihoods across the nation. Explore our initiatives and see how to
+        submit a
+        request for charity</p>
+      <button>APPLY NOW</button>
+    </div>
+    <div class="join-lapalap">
+      <h1>Join Lapalap</h1>
+      <p>We are growing pretty fast and alwats looking for exceptional people to join our team.<br>Know more about
+        the
+        careers and find the job that suits you best.</p>
+      <button style="padding: 14px 40px;">CAREERS</button>
+    </div>
+  </div>
+  <div class="signup-lapalap-news">
+    <p style="text-align: center; margin-bottom: 20px;">Sign up for Lapalap news</p>
+    <form action="">
+      <input type="text" placeholder="EMAIL">
+      <input type="submit" value="Subscribe">
+    </form>
+  </div>
+  <div class="footer-links"
+    style="display: flex;padding: 48px 32px 30px 32px;justify-content: space-between; line-height: 2.4em;">
+    <div class="left-box" style="display: flex;">
+      <div class="resurces-links" style="margin-right:50px">
+        <p class="heading">Resources</p>
+        <a href="">Apply to be a S. Business Associate</a>
+        <a href="./BA.html">Apply to be a Business Associate</a>
+        <a href="">Apply to be a Supplier</a>
+        <a href="./feedback.html">Contact Us</a>
+        <a href="">Subscribe to Lapalap</a>
+      </div>
+      <div class="about-our-business">
+        <p class="heading">About Our Business</p>
+        <a href="">Lapalap Careers</a>
+        <a href="./partners.html">Locations-Current Serving Area</a>
+        <a href="">Newsroom</a>
+        <a href="">Social Responsibility</a>
+        <a href="">Lapalap leadership Team</a>
+      </div>
+    </div>
+    <div class="right-box" style="display: flex;">
+      <div class="see-brands" style="margin-right:70px">
+        <p class="heading">See Brands</p>
+        <a href="">New Products</a>
+        <a href="">Pre-Book Upcoming Products</a><br>
+        <a href="" class="color-highlight">Hot Locations open for SBA</a>
+        <a href="" class="color-highlight">Hot Locations open for BA</a>
+      </div>
+      <div class="shop-by-explore">
+        <p class="color-highlight heading">Shop/But/Explore Lapalap</p>
+        <a href="">COVID-19 Food & Packaging Essentials</a>
+        <a href="" style="color:#4f4d4e">Lapalap & COVID-19</a><br>
+        <div class="address">
+          <p>Radeus Ventures Private Limited</p>
+          <p>CIN:U74900CH2015PTC035747</p>
+          <p>Registered Office: 448, Level1,</p>
+          <p>Sector 15, Chandigarh 160015, INDIA</p>
+          <p>feedback@lapalap.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer style="display: flex; border-top: 1px solid #e7e8e9;position: relative;">
+    <p style="color: #969799; padding: 32px 48px 0 48px; font-size: 18px;">
+      © 2007-2020 Lapalap. All rights reserved.
+      <span style="color: #1e4c74">Powered by RVPL</span>
+    </p>
+    <div
+      style=" position: absolute; top: 0; width: 100%; display: flex; align-items: center; justify-content: center; ">
+      <div style="display: flex; align-items: center; margin-top: -33px; background: #fefefe; padding: 0 10px;">
+        <a href="index.html"><img src="./imgs/brand-logo.png" alt="" width="62px" /></a>
+        <h2 style="padding-left: 15px; font-size: 26px; font-weight: 600;">ALWAYS @ LOWEST PRICE</h2>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

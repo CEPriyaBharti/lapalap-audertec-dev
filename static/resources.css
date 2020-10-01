@@ -1,0 +1,337 @@
+.signup-lapalap-news {
+    padding: 46px;
+    background: #201e1f;
+    color: #fefefe;
+    font-size: 23px;
+  }
+
+  .signup-lapalap-news form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .signup-lapalap-news input {
+    background: none;
+    border: 2px solid #fefefe;
+    border-radius: 4px;
+    padding: 20px;
+  }
+
+  .signup-lapalap-news input[type=text] {
+    width: 390px;
+    margin-right: 20px;
+    font-size: 23px;
+    color: #e4e4e4;
+  }
+
+  .signup-lapalap-news input[type=text]::placeholder {
+    color: #fefefe;
+    font-size: 16px;
+    font-family: Calibri;
+  }
+
+  .signup-lapalap-news input[type=submit] {
+    width: 150px;
+    color: #fefefe;
+    font-size: 23px;
+
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #9a9b9d;
+    font-size: 18px;
+    display: block;
+  }
+
+  .footer-links .color-highlight {
+    color: #f08c3f;
+  }
+
+  .footer-links .heading {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .footer-links .address {
+    line-height: 0.9em;
+  }
+
+  .footer-links .address p {
+    color: #9a9b9d;
+    font-size: 18px;
+    margin: 0.5em 0;
+  }
+
+  .footer-join-section {
+    width: 100%;
+    display: flex;
+    padding: 70px 19%;
+    justify-content: space-between;
+  }
+
+  .footer-join-section .social-responsibility {
+    width: 350px;
+  }
+
+  .footer-join-section .join-lapalap {
+    width: 350px;
+  }
+
+  .footer-join-section h1 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #363435;
+  }
+
+  .footer-join-section p {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 40px;
+    color: #97989a;
+  }
+
+  .footer-join-section button {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 14px 28px;
+    border: none;
+    background: #a9cf46;
+    color: #fefefe;
+  }
+
+  .app-showcase {
+    width: 100%;
+    padding: 100px 50px;
+    background: #a9cf46;
+    display: flex;
+  }
+
+  .app-showcase .app-screenshots {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app-showcase .app-description {
+    width: 50%;
+    padding-top: 100px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rotateimg20 {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+
+  .screenshot-container {
+    position: relative;
+    height: 400px;
+    right: -8%;
+  }
+
+  .screenshot-container img {
+    height:360px;
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  .screenshot-container img:nth-child(1) {
+    left: -200px;
+  }
+  .screenshot-container img:nth-child(2) {
+    left: -70px;
+  }
+  .screenshot-container img:nth-child(3) {
+    left: 60px;
+  }
+
+  .app-buttons {
+    margin-top: 80px;
+  }
+
+  .app-buttons button {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fefefe;
+    background: #f08634;
+    border: none;
+    padding: 10px 20px;
+    margin: 12px;
+  }
+
+  .app-description h1 {
+    color: #fefefe;
+    font-size: 34px;
+  }
+
+  .app-description .key-points {
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  .app-description .key-points>div {
+    margin-top: 20px;
+  }
+
+  .app-description .key-points .tick {
+    color: #f08634;
+    margin-right: 20px;
+  }
+
+  .app-description button {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f08635;
+    background: #fefefe;
+    border: none;
+    padding: 10px 25px;
+  }
+
+
+  @media(max-width:1196px){
+    .footer-links{
+      flex-flow: column;
+    align-items: center;
+    }
+
+    .footer-links .left-box{
+      margin-bottom: 40px;
+      width: 600px;
+    }
+    .footer-links .right-box{
+      width: 600px;
+    }
+    .footer-links .right-box .see-brands{
+      margin-right: 89px !important;
+    }
+
+
+    .footer-join-section {
+      padding: 70px 10%;
+  }
+  }
+
+  @media(max-width:1120px){
+    .app-showcase {
+      flex-flow: column;
+      align-items: center;
+    }
+  }
+
+  @media(max-width:920px){
+    .footer-join-section{
+      flex-flow: column;
+      align-items: center;
+    }
+    .footer-join-section .social-responsibility{
+      margin-bottom: 60px;
+  }
+  }
+  @media(max-width:817px){
+    .app-showcase> div{
+      width: 90% !important;
+    }
+
+  }
+
+  @media(max-width:700px){
+    .footer-links{
+      padding-bottom:40px !important;
+    }
+    .footer-links .left-box{
+      margin-bottom: 40px;
+      width: 300px;
+      flex-flow: column;
+    }
+    .footer-links .right-box{
+      flex-flow: column;
+      width: 300px;
+    }
+    .footer-links .left-box .resurces-links{
+      margin: 0  0 40px 0!important;
+    }
+    .footer-links .right-box .see-brands{
+      margin: 0  0 40px 0 !important;
+    }
+  }
+  @media(max-width:620px){
+    .screenshot-container{
+      height: 200px;
+    }
+    .screenshot-container img {
+      height:180px;
+      width: 100px;
+      position: absolute;
+      top: 20px;
+      border-radius: 20px;
+    }
+
+  .screenshot-container img:nth-child(1) {
+    left: -100px;
+  }
+  .screenshot-container img:nth-child(2) {
+    left: -35px;
+  }
+  .screenshot-container img:nth-child(3) {
+    left: 30px;
+  }
+
+}
+
+@media(max-width:534px){
+
+  .app-showcase{
+    padding: 100px 0px;
+  }
+  .footer-join-section .social-responsibility {
+    width: 280px;
+  } 
+  .footer-join-section .join-lapalap {
+    width: 280px;
+  }
+  .app-buttons{
+    flex-flow: column;
+    display: flex;
+  }
+
+
+  .signup-lapalap-news form {
+    align-items: center;
+    flex-flow: column;
+  }
+  .signup-lapalap-news input[type=text] {
+    width: 290px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .signup-lapalap-news input[type=submit] {
+    width: 134px;
+  }
+
+  footer p{
+    padding: 32px 0 0 30px !important;
+    font-size: 12px !important;
+  }
+
+  footer h2{
+    font-size: 18px !important;
+  }
+  footer >div>div{
+    margin-top: -26px !important;
+  }
+  footer img{
+    width:52px !important;
+  }
+}

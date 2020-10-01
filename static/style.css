@@ -1,0 +1,343 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Calibri;
+}
+body{
+    background: #fff;
+}
+
+header{
+    height: 160px;
+    border-bottom: 0.5px solid #aaabaf8a;
+}
+
+#header-container{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+/* ---------------------------------Logo section */
+
+.logo-section,.nav-section{
+    display: flex;
+}
+.logo-section{
+    flex: 1;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+.logo-section > .logo{
+    display: flex;
+    align-items: center;
+}
+.logo > .logo-text{
+    font-weight: 700;
+    color: #363435;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+header .search-signup{
+    display: flex;
+    align-items: center;
+}
+
+header .sign-up-button{
+    background: none;
+    border-radius: 4px;
+    height: 44px;
+    width: 168px;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: 2.5px solid;
+}
+header .search{
+    position: relative;
+}
+header .search >input{
+    height: 44px;
+    width: 250px;
+    border: 0;
+    border-bottom: 1.5px solid #d3d4d6;
+    padding: 0 20px;
+    margin-right: 50px;
+}
+
+header .search >input::placeholder{
+    color:#d3d4d6;
+    font-size: 18px;
+    font-weight: 600;
+}
+header .search >input:focus{
+    outline: none;
+}
+header .search> button{
+    color: #d3d4d6;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 12px;
+    font-size: 18px;
+    right: 60px;
+}
+
+/* ------------------------------------Nav Section */
+.nav-section{
+    padding: 0 50px 0 34px;
+    display: flex;
+    justify-content: space-between;
+}
+
+   nav, nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+
+  nav ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-size: 18px;
+  }
+  
+  nav ul li {
+    cursor: pointer;
+    list-style: none;
+    line-height: 60px;
+    text-align: center;
+    color: #aaabaf;
+    height: 100%;
+    padding: 0 28px;
+    font-weight: 600;
+  }
+  .mobile-nav-button{
+    display: none;
+    font-size: 28px;
+    padding: 14px 20px;
+}
+  @media (max-width:1200px){
+    nav ul li {
+        padding:0 10px;
+    }
+  }
+  @media (max-width:1062px){
+    nav{
+        display:none;
+    }
+    .mobile-nav-button{
+        display: block;
+    }
+}
+
+@media(max-width:780px){
+    header .search >input{
+        width: 200px;
+        border: 0;
+        border-bottom: 1.5px solid #d3d4d6;
+        padding: 0 10px;
+        margin-right: 20px;
+    }
+    header .search> button{
+        right: 30px;
+    }
+}
+
+
+@media (max-width:700px){
+    header{
+        height: 220px;
+    }
+    .logo-section{
+        flex-flow: column;
+        padding:40px 40px 10px 40px;
+    }
+    header .search-signup{
+        justify-content: center;
+    }
+}
+
+
+@media(max-width:468px){
+    .cart-section{
+        width:120px;
+        padding:20px 0 20px 10px;
+    }
+    .nav-section button {
+        padding: 0 25px;
+    }
+    .mobile-nav-button{
+        padding: 14px 10px 14px 0;
+    }
+    header .sign-up-button{
+        width: 130px;
+        padding: 10px 10px;
+    }
+    .logo-section{
+        flex-flow: column;
+        padding:26px 26px 10px 26px;
+    }
+}
+@media(max-width:400px){
+
+    header {
+        height: 254px;
+    }
+    
+    header .search-signup{
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    header .search {
+        margin: 0 0 10px 0;
+    }
+
+    .cart-section {
+        width: 116px !important;
+        padding: 20px 0 20px 10px !important;
+    }
+
+    .nav-section button {
+        padding: 0 10px !important;
+    }
+    .nav-section {
+        padding: 0 24px 0 24px;
+    }
+}
+  nav ul li:hover {
+    background: #f08534;
+    color:#fff;
+  }
+  
+  .nav-section button {
+    background: #f08534;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 0 20px;
+    color: #fff;
+  }
+  
+
+  /* --------------------------------------------------Cart section */
+
+  .cart-section{
+      width:165px;
+      padding:20px 0 20px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .cart-section span{
+      font-size: 20px;
+      color: #3d3b3c;
+  }
+
+  /* --------------------------------------------------Mobile Nav bar */
+
+  #mobile-nav{
+      background:black;
+      color: white;
+      height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 80px;
+  }
+
+  #mobile-nav ul li{
+    text-align: center;
+    padding:10px;
+  }
+#mobile-nav .logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#mobile-nav .logo-text{
+    color:#fefefe;
+}
+  .fa-bars:before {
+    content: "\f0c9";
+    padding: 2px 10px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+.nav-close-btn{
+    font-size: 24px;
+    position: absolute;
+    top: 16px;
+    right: 24px;
+}
+
+
+#bussiness-associate{
+    margin: 73px 35px 0 73px;
+    width: 50%;
+    color:#a8ce4f;
+    font-size: 50px;
+    height: 40%;
+    font-weight:bold;
+}
+#back-text span{
+    background-color:#211e1f;  
+    display: inline-block;
+}
+
+
+#body-image{
+    margin:134px 70px 70px 104px;
+    width: 36%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+
+    
+}
+
+#body-part{
+    display: flex;
+
+}
+
+
+#back-text{
+    width: 70%;
+    margin-bottom: 70px;
+}
+
+
+.business-logo .logo-text{
+    font-size: 30px;
+    color: black;
+}
+
+.business-logo> div > div{
+
+    font-size: 18px;
+    font-weight: 400;
+    color: #565656;
+}
+
+
+#three-parts ul{
+    list-style: none;
+    text-align: left;
+}
+
+#three-parts ul li:before{
+content: "\276D\276D";
+color: #f08632;
+font-size: 12px;
+}

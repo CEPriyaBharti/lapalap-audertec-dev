@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./static/landing-contact.css">
+    <link rel="stylesheet" href="./static/header.css">
+    <link rel="stylesheet" href="./static/resources.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home-About</title>
+    <style type="text/css">
+        @media(max-width:524px) {
+            .desktop-slider {
+                display: none;
+            }
+
+            .mobile-slider {
+                display: block !important;
+            }
+
+            .slider-3-content {
+                margin-left: 15% !important;
+            }
+
+            .slider-2-content {
+                margin-left: 15% !important;
+                width: auto !important;
+            }
+        }
+
+        @media(max-width:800px) {
+            .team_n_location {
+                padding: 70px 90px;
+            }
+        }
+
+        @media(max-width:600px) {
+            .team_n_location {
+                padding: 70px 60px;
+            }
+        }
+
+        @media(max-width:460px) {
+            .team_n_location {
+                padding: 70px 30px;
+            }
+        }
+
+        @media(max-width:380px) {
+            .team_n_location {
+                padding: 70px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="header-container">
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="./imgs/brand-logo.png" alt="" width=45px;>
+                    <p class="logo-text">LAPALAP.com</p>
+                </div>
+                <div class="search-signup">
+                    <div class="search">
+                        <input type="text" placeholder="SEARCH ITEMS">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                    <button class="sign-up-button">Sign in / sign up</button>
+                </div>
+            </div>
+            <div class="nav-section">
+                <nav class="desktop-nav">
+                    <ul>
+                        <li>Buy / Shop</li>
+                        <li><a href="./index.html">About</a></li>
+                        <li><a href="./partners.html">Partner With Lapalap</a></li>
+                        <li>Newsroom</li>
+                        <li>Careers</li>
+                        <li><a href="./feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+                <a class="mobile-nav-button" onclick="open_nav()"><i class="fa fa-bars"></i></a>
+                <button>BUY / SHOP</button>
+                <div class=" cart-section">
+                    <div class="three-line">
+                        <img src="./imgs/three line-icon.jpg" alt="" width="20px" height='16px'>
+                        <span id="three-line-number">0</span>
+                    </div>
+                    <div class="favorite-product">
+                        <img src="./imgs/favorite-icon.png" alt="" width="20px" height='20px'>
+                        <span id="favorite-product-number">0</span>
+                    </div>
+                    <div class="cart">
+                        <img src="./imgs/cart-icon.jpg" alt="" width="16px" height='20px'>
+                        <span id="cart-product-number">0</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div id="mobile-nav">
+        <a class="nav-close-btn" onclick="close_nav()">&#10006</a>
+        <div class="logo">
+            <img src="./imgs/brand-logo.png" alt="" width=45px;>
+            <p class="logo-text">LAPALAP.com</p>
+        </div>
+        <ul>
+            <li>Buy / Shop</li>
+            <li><a href="./landing.html">About</a></li>
+            <li><a href="./partners.html">Partner With Lapalap</a></li>
+            <li>Newsroom</li>
+            <li>Newsroom</li>
+            <li>Careers</li>
+            <li><a href="./feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+    <!-- End of header -->
+
+    <script src="./js/main.js"></script>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container" style="width: 100vw; height: 62vh">
+        <!-- Full-width images with number and caption text -->
+
+        <div class="mySlides fade" style="width:100%; height:100%">
+            <!-- <div class="numbertext">1 / 3</div> -->
+            <div class="slider-1-content"
+                style="display: flex; flex-flow:column;height: 100%;width: 100%;position: absolute;top: 0;align-items: center;justify-content: center;">
+                <h1 style="text-align: center;margin-bottom: 20px"><span style='color:#2858c0;'>New
+                        Product</span><br>Lineup!</h1>
+                <button
+                    style="width: 220px; padding: 10px;font-size: 16px;height:50px;background: #211e1f;color:#fefefe;border: none;">Shop
+                    by
+                    Brand</button>
+            </div>
+            <img class='desktop-slider' src="./static/img/img1.jpg" style="width:100%; height:100%">
+            <img class='mobile-slider' src="./static/img/mobile-slider1.jpg"
+                style="width:100%; height:100% ;display: none;">
+            <!-- <div id="slider-button"><button id="shop-by-brand">Shop by Brand</button></div> -->
+        </div>
+
+        <div class="mySlides fade" style="width:100%; height:100%">
+            <!-- <div class="numbertext">2 / 3</div> -->
+            <div class="slider-2-content"
+                style="display: flex; flex-flow:column;height: 100%;width: 50%; margin-left:25%;position: absolute;top: 0;align-items: flex-start;justify-content: center;">
+                <h1 style="margin-bottom: 2px; color: #a2c150; background:black;">DEALS</h1>
+                <h1 style="margin-bottom: 20px; background:black; color: #fff;">Limited Edition</h1>
+                <button
+                    style="width: 140px; padding: 10px;font-size: 16px;height:50px; background:#1e4b73;color: #fefefe;border: none;">Explore
+                    Now</button>
+            </div>
+            <img class='desktop-slider' src="./static/img/img2.jpg" style="width:100%; height:100%">
+            <img class='mobile-slider' src="./static/img/mobile-slider2.jpg"
+                style="width:100%; height:100%; display: none;">
+            <!-- <div id="slider-button"><button id="shop-by-brand">Shop by Brand</button></div> -->
+        </div>
+
+        <div class="mySlides fade" style="width:100%; height:100%">
+            <!--  <div class="numbertext">3 / 3</div> -->
+            <div class="slider-3-content"
+                style="display: flex; flex-flow:column;height: 100%;width: 50%;margin-left:40%;position: absolute;top: 0;align-items: flex-start;justify-content: center;">
+                <h1 style="margin-bottom: 20px; color:#234928">Healthy<br>Food & Snacks</h1>
+                <button
+                    style="width: 140px; padding: 10px;font-size: 16px;height:50px; background:#244829;color: #fefefe;border: none;">Shop
+                    Now</button>
+            </div>
+            <img class='desktop-slider' src="./static/img/img3.jpg" style="width:100%; height:100%">
+            <img class='mobile-slider' src="./static/img/mobile-slider3.jpg"
+                style="width:100%; height:100%; display: none;">
+            <!-- <div id="slider-button"><button id="shop-by-brand">Shop by Brand</button></div> -->
+        </div>
+
+        <!-- Next and previous buttons -->
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div id="our-business" style="background-color: white;">
+        <div id="Business">
+            <p style="margin-top: 40px">Our Business</p>
+        </div>
+        <div id="para">
+            <p style="color: #f2a05f; font-size: 21px;">Highly scalable and repeatable which streamlines the entire
+                grocery supply chain
+                ensuring quick turnaround time and low prices for consumers which get even lower with increase in
+                order volume and vsriety keeps growing with the footprint.</p>
+            <br>
+            <p style="color: #9d9e9f" ;>With 2 awards by Government of India in hands and in 5 years. Lapalap is making
+                products more accesible to people than ever before. We do this by purchasing large quantities of
+                product manufacturng and storing it in<br>our own distribution ceners across Tricity currently.Our
+                Consumers then order the items in various quantities, which we deliver in as little as 30 minutes to
+                next day delivery.</p>
+            <br>
+            <p style="color: #9d9e9f" ;>
+                We wish to become the largest grocery e-tailer in India. But even more important is that the dream that
+                took shape 5 years ago will drive our manufacturing partners's businesses forward with consumers
+                getting products at amazing prices.
+            </p>
+
+
+        </div>
+        <hr>
+
+        <div style="display: flex;justify-content: center;align-items: center;    padding: 20px 0 40px 0;">
+            <a id="link" href="url">Need Help?</a>
+            <img src="static/img/thisicon.png" alt="NO" width="25px" height="18px"
+                style="margin-right: 5px;margin-top: -10px;">
+            </img>
+            <a id="link2" href="url">Open Support</a>
+        </div>
+
+    </div>
+    <div style=" padding-bottom:90px; background: #f5f5f5;line-height: 1.5em;
+    ">
+        <div class="grey-container">
+            <p style="text-align: center; font-size:46px; padding: 40px" ;>Meet Lapalap</p>
+            <p style="text-align: center; color: #9d9e9f;font-size: 20px;">Lapalap is a company that today removes
+                costs, complexities
+                <br>and in efficiencies from the supply chain for our partners.</p>
+        </div>
+        <div id="boxs">
+            <div id="one">
+                <p class="meet-lapalap-number">123</p>
+                <h1>Customers</h1>
+                <p class="description">We sell top quality grocery products
+                    at<br> lowest price
+                    to our 123 consumers in<br> Tricity currently.</p>
+            </div>
+            <div id="two">
+                <p class="meet-lapalap-number">200</p>
+                <h1>Suppliers & Business Associates</h1>
+                <p class="description">We partner with 200 suppliers to
+                    ensure<br> our consumers
+                    have their basic<br> requirements, when ordering with us.</p>
+            </div>
+            <div id="three">
+                <p class="meet-lapalap-number">227</p>
+                <h1>Products</h1>
+                <p class="description">This number grows constantly, but as
+                    of<br> now, we have
+                    227 products available to<br> watch and purchase on Lapalap.</p>
+            </div>
+            <div id="four">
+                <p class="meet-lapalap-number">Rs1M</p>
+                <h1>Sales</h1>
+                <p class="description">In September, 2020, our net sales
+                    were 1<br> million,
+                    with month-over-month growth<br> of 400%.</p>
+            </div>
+            <div id=" one">
+                <p class="meet-lapalap-number">5</p>
+                <h1>Employees</h1>
+                <p class="description">Every member of our 5 member
+                    team<br>
+                    matters to the
+                    success of our company.</p>
+            </div>
+            <div id="one">
+                <p class="meet-lapalap-number">2500</p>
+                <h1>Visitors</h1>
+                <p class="description">Till date 2500 people have
+                    visited<br> our site.</p>
+            </div>
+
+        </div>
+        <div id="see-our-products-button" style="text-align: center; ">
+            <button>See Our Products</button>
+        </div>
+    </div>
+
+    <div style="background: #fefefe; padding: 90px 0 0 0;">
+        <hr style=" margin:0 auto;">
+        <div class='team_n_location'>
+            <div style="width: 370px; margin: 20px 0">
+                <h1>Our Team</h1>
+                <p style="color: #9d9e9f">Our employees are the driving force<br> behind our success. Learn about
+                    some
+                    of<br> the leaders who move our business.</p>
+                <button>MEET
+                    THE
+                    TEAM</button>
+            </div>
+            <div style="width:370px;margin: 20px 0">
+                <h1>Our Locations</h1>
+                <p style="color: #9d9e9f">Our distribution centers are strategically<br> located across
+                    neighbourhoods
+                    in Tricity<br> to serve our consumers in a better manner.</p>
+                <a href="./partners.html" style="padding: 18px 0;"><button style="padding: 10px 60px;">MAP</button></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="app-showcase">
+        <div class="app-screenshots">
+            <div class="screenshot-container">
+                <img class="rotateimg20" src="./imgs/screenshot1.PNG" alt="">
+                <img class="rotateimg20" src="./imgs/screenshot2.PNG" alt="">
+                <img class="rotateimg20" src="./imgs/screenshot3.PNG" alt="">
+                <br><br>screenshots
+            </div>
+            <div class="app-buttons">
+                <button>PLAY STORE</button>
+                <button>APP STORE</button>
+            </div>
+
+        </div>
+        <div class="app-description">
+            <div>
+                <h1>In order to recieve Goods<br> at Low Price; SignUp or<br>Download the app</h1>
+                <div class="key-points">
+                    <div style="display: flex;"><span class="tick">&#10004</span><span>First in India to
+                            offer<br>Everithing
+                            at
+                            Low Price</span></div>
+                    <div><span class="tick">&#10004</span><span>Zero Waste Warehouses</span></div>
+                    <div><span class="tick">&#10004</span><span>100% Bio-Degradable Packing</span></div>
+                </div>
+
+                <div style="margin-top: 80px;">
+                    <button>CONTINUE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-join-section">
+        <div class="social-responsibility">
+            <h1>Our Social responsibility</h1>
+            <p>We are steadfast in improving livelihoods across the nation. Explore our initiatives and see how to
+                submit a
+                request for charity</p>
+            <button>APPLY NOW</button>
+        </div>
+        <div class="join-lapalap">
+            <h1>Join Lapalap</h1>
+            <p>We are growing pretty fast and alwats looking for exceptional people to join our team.<br>Know more
+                about
+                the
+                careers and find the job that suits you best.</p>
+            <button style="padding: 14px 40px;">CAREERS</button>
+        </div>
+    </div>
+    <div class="signup-lapalap-news">
+        <p style="text-align: center; margin-bottom: 20px;">Sign up for Lapalap news</p>
+        <form action="">
+            <input type="text" placeholder="EMAIL">
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+    <div class="footer-links"
+        style="display: flex;padding: 48px 32px 30px 32px;justify-content: space-between; line-height: 2.4em;">
+        <div class="left-box" style="display: flex;">
+            <div class="resurces-links" style="margin-right:50px">
+                <p class="heading">Resources</p>
+                <a href="">Apply to be a S. Business Associate</a>
+                <a href="./BA.html">Apply to be a Business Associate</a>
+                <a href="">Apply to be a Supplier</a>
+                <a href="./feedback.html">Contact Us</a>
+                <a href="">Subscribe to Lapalap</a>
+            </div>
+            <div class="about-our-business">
+                <p class="heading">About Our Business</p>
+                <a href="">Lapalap Careers</a>
+                <a href="./partners.html">Locations-Current Serving Area</a>
+                <a href="">Newsroom</a>
+                <a href="">Social Responsibility</a>
+                <a href="">Lapalap leadership Team</a>
+            </div>
+        </div>
+        <div class="right-box" style="display: flex;">
+            <div class="see-brands" style="margin-right:70px">
+                <p class="heading">See Brands</p>
+                <a href="">New Products</a>
+                <a href="">Pre-Book Upcoming Products</a><br>
+                <a href="" class="color-highlight">Hot Locations open for SBA</a>
+                <a href="" class="color-highlight">Hot Locations open for BA</a>
+            </div>
+            <div class="shop-by-explore">
+                <p class="color-highlight heading">Shop/But/Explore Lapalap</p>
+                <a href="">COVID-19 Food & Packaging Essentials</a>
+                <a href="" style="color:#4f4d4e">Lapalap & COVID-19</a><br>
+                <div class="address">
+                    <p>Radeus Ventures Private Limited</p>
+                    <p>CIN:U74900CH2015PTC035747</p>
+                    <p>Registered Office: 448, Level1,</p>
+                    <p>Sector 15, Chandigarh 160015, INDIA</p>
+                    <p>feedback@lapalap.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="display: flex; border-top: 1px solid #e7e8e9;position: relative;">
+        <p style="color: #969799; padding: 32px 48px 0 48px; font-size: 18px;">
+            © 2007-2020 Lapalap. All rights reserved.
+            <span style="color: #1e4c74">Powered by RVPL</span>
+        </p>
+        <div
+            style=" position: absolute; top: 0; width: 100%; display: flex; align-items: center; justify-content: center; ">
+            <div style="display: flex; align-items: center; margin-top: -33px; background: #fefefe; padding: 0 10px;">
+                <a href="index.html"><img src="./imgs/brand-logo.png" alt="" width="62px" /></a>
+                <h2 style="padding-left: 15px; font-size: 26px; font-weight: 600;">ALWAYS @ LOWEST PRICE</h2>
+            </div>
+        </div>
+    </footer>
+    <script src="slider.js"></script>
+</body>
+
+</html>

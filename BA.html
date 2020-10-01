@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./static/resources.css">
+    <link rel="stylesheet" href="./static/header.css">
+    <link rel="stylesheet" href="./static/ba-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <title>BA-Lapalap</title>
+</head>
+
+<body>
+
+
+    <header>
+        <div id="header-container">
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="./imgs/brand-logo.png" alt="" width=45px;>
+                    <p class="logo-text">LAPALAP.com</p>
+                </div>
+                <div class="search-signup">
+                    <div class="search">
+                        <input type="text" placeholder="SEARCH ITEMS">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                    <button class="sign-up-button">Sign in / sign up</button>
+                </div>
+            </div>
+            <div class="nav-section">
+                <nav class="desktop-nav">
+                    <ul>
+                        <li>Buy / Shop</li>
+                        <li><a href="./index.html">About</a></li>
+                        <li><a href="./partners.html">Partner With Lapalap</a></li>
+                        <li>Newsroom</li>
+                        <li>Careers</li>
+                        <li><a href="./feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+                <a class="mobile-nav-button" onclick="open_nav()"><i class="fa fa-bars"></i></a>
+                <button>BUY / SHOP</button>
+                <div class=" cart-section">
+                    <div class="three-line">
+                        <img src="./imgs/three line-icon.jpg" alt="" width="20px" height='16px'>
+                        <span id="three-line-number">0</span>
+                    </div>
+                    <div class="favorite-product">
+                        <img src="./imgs/favorite-icon.png" alt="" width="20px" height='20px'>
+                        <span id="favorite-product-number">0</span>
+                    </div>
+                    <div class="cart">
+                        <img src="./imgs/cart-icon.jpg" alt="" width="16px" height='20px'>
+                        <span id="cart-product-number">0</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div id="mobile-nav">
+        <a class="nav-close-btn" onclick="close_nav()">&#10006</a>
+        <div class="logo">
+            <img src="./imgs/brand-logo.png" alt="" width=45px;>
+            <p class="logo-text">LAPALAP.com</p>
+        </div>
+        <ul>
+            <li>Buy / Shop</li>
+            <li>About</li>
+            <li>Partner With Lapalap</li>
+            <li>Newsroom</li>
+            <li>Landlord</li>
+            <li>Newsroom</li>
+            <li>Careers</li>
+            <li>Feedback</li>
+        </ul>
+    </div>
+    <!-- End of header -->
+
+
+    <script src="./js/main.js"></script>
+
+    <div id="body-part">
+        <div id="bussiness-associate">
+            <div id="back-text">
+                <span>BECOME OUR</span>
+                <br>
+                <span style="background-color: #201e1f; color: #fefefe; margin-top: 5px;">Bussiness Associate</span>
+                <br>
+                <p
+                    style="background-color: #fefefe; color: #252525; font-size: 22px; font-weight: normal; text-align: right; margin-top: 5px; margin-right: 97px;">
+                    EXCLUSIVE OPTIONS AVAILABLE</p>
+            </div>
+            <span
+                style="font-size: 47px; text-align: right; display: block; background-color: #fefefe; color: #a9cf46">RIDE
+                THE<br></span>
+            <span
+                style="font-size: 47px; text-align: right; display: block; background-color: #fefefe; color: #a9cf46">DIGITAL
+                WAVE<br></span>
+            <div style="display: flex; align-items: flex-end;" class="business-logo">
+                <img src="./imgs/brand-logo.png" width=70px height=70px>
+                <div>
+                    <p class="logo-text">LAPALAP.com</p>
+                    <div>SALES@LAPALAP.COM <span>|</span>+91 99 1413 1188</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="body-image">
+            <img src="./static/img/BA Page image1.jpg" width="500px" height="300px" style="align-items: baseline;">
+            <button onclick="open_ba_popup()"
+                style="background-color: #a9cf46; color: #fefefe; border: none; margin-top:5px;padding: 18px 34px; font-size: 20px; font-weight: bold;">APPLY
+                NOW</button>
+
+        </div>
+
+
+    </div>
+
+    <!-- Apply now popup for email section -->
+    <div id="ba-popup">
+        <div class="popup-window">
+            <div class="popup-heading">
+                <h1>Apply for BA</h1>
+                <p>Please provide your Email ID to share Application Form.</p>
+                <span class=" popup-close-btn"><a onclick="close_ba_popup()"> &#10006 </a></span>
+            </div>
+            <div class=" popup-form">
+                <form action="ba-mail.php" method="POST">
+                    <div>
+                        <span style="padding-right: 10px;"><i class="fa fa-envelope"
+                                style="font-size:24px;color:#9e9e9e"></i></span>
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Apply now popup for email section end-->
+
+
+
+
+    <hr style="width:60%; margin:0 auto; border-top: 0.5px;">
+    <div class="digital-lapalap">
+        <h1 style="margin: 105px 0 70px 0; text-align: center; font-size: 48px; font-weight: 600; color: #606062">
+            Experience Digital with Lapalap</h1>
+    </div>
+    <div id="three-parts" style="display: flex; margin:0 90px 90px 90px; justify-content: space-around;">
+        <div style="width: 20%; text-align: center;">
+            <!-- <p>1</p> -->
+            <img src="./static/img/BA Page icon1.jpg" style="width: 50px; height: auto;">
+            <p style="color: #a9cf46; font-size: 24px; font-weight: 600;margin-bottom: 10px;">Receive Orders</p>
+            <ul style="color: #97989a; font-size: 20px;">
+                <li> Receive orders via website/apps</li>
+                <li> Check availability</li>
+                <li> Accept consumer's order</li>
+                <li> Seamless experience</li>
+                <li> Very little time to set up & start<br>working</li>
+            </ul>
+        </div>
+        <div style="width: 20%; text-align: center;">
+            <!-- <p>2</p> -->
+            <img src="./static/img/BA Page icon2.jpg" style="width: 50px; height: auto;">
+            <p style="color:black; font-size: 24px; font-weight: 600;margin-bottom: 10px;">Collect & Deliver</p>
+            <ul style="color: #97989a; font-size: 20px;">
+                <li> Receive the product from SBA</li>
+                <li> Segregate as per the order</li>
+                <li> Pack</li>
+                <li> Deliver</li>
+                <li> Easy and simple user interface</li>
+            </ul>
+        </div>
+        <div style="width: 20%; text-align: center;">
+            <!-- <p>3</p> -->
+            <img src="./static/img/BA Page icon3.jpg" style="width: 50px; height: auto;">
+            <p style="color: #a9cf46; font-size: 24px; font-weight: 600;margin-bottom: 10px;">Manage</p>
+            <ul style="color: #97989a; font-size: 20px;">
+                <p>Get information when you need it.</p>
+                <li> Product details available 24/7</li>
+                <li> Digitally manage Product info</li>
+                <li> Reports</li>
+                <li> Catalog</li>
+                <li> Number of Orders</li>
+                <li> Your Earnings</li>
+                <li> Ratings</li>
+            </ul>
+
+        </div>
+
+
+
+    </div>
+    <div id="four-divs" style="display: flex; margin-bottom: 90px;">
+        <div
+            style="width:25%; height: 500px; background-color: #a9cf46; text-align: center; display: flex;flex-flow: column;align-items: center;justify-content: center;">
+            <img src="./static/img/BA Page phone-icon.jpg" style="width: 50px; height: auto;">
+            <p style="font-size: 22px; color: #fefefe; font-weight: 600; margin-bottom: 20px;">Placing our<br>Business
+                Associate first<br>is our Top Priority<br>at Lapalap</p>
+            <p style="color: #323520; font-size: 18px;  line-height: 1.5em;">If you have a question, concern,<br>or
+                request, we are here to help.<br>You can submit a short form,<br>call, or email us to let us know<br>how
+                we can better serve you.</p>
+        </div>
+        <div>
+            <div
+                style="width: 100%; height: 150px; color: #606062; height: 180px; font-size: 50px; padding: 60px 300px;">
+                <p>Few Ways to Order</p>
+            </div>
+            <div style="display: flex; width: 100%">
+                <div
+                    style="width:33.33%;text-align: center; display: flex;flex-flow: column;align-items: center;justify-content: center;">
+                    <img src="./static/img/BA Page cart-icon.jpg" style="width: 75px; height: auto;margin-bottom: 2px;">
+
+                    <p style="font-size: 22px; font-weight: 600; margin-bottom: 20px; color: #5f5f63;">Add to Cart</p>
+                    <p style="color: #363636; font-size: 18px;">Business Associate or Customers<br> with buying rights
+                        can add<br> products to their shopping cart and<br>order through Lapalap.</p>
+                </div>
+                <div
+                    style="width:33.33%;text-align: center; display: flex;flex-flow: column;align-items: center;justify-content: center;">
+                    <img src="./static/img/BA Page one-click-icon.jpg"
+                        style="width: 40px; height: auto;margin-bottom: 2px;">
+                    <p style="font-size: 22px; font-weight: 600; margin-bottom: 20px; color: #5f5f63;">Order with one
+                        Click</p>
+                    <p style="color: #363636; font-size: 18px;">Extremely easy to use<br> customer user interface.<br>We
+                        have simplified the whole<br>buying process.</p>
+                </div>
+                <div
+                    style="width:33.33%;text-align: center; display: flex;flex-flow: column;align-items: center;justify-content: center;">
+                    <img src="./static/img/BA Page pay-rate-icon.jpg"
+                        style="width: 35px; height: auto;margin-bottom: 2px;">
+                    <p style="font-size: 22px; font-weight: 600; margin-bottom: 20px; color: #5f5f63;">Pay & Rate</p>
+                    <p style="color: #363636; font-size: 18px;">Credit/Debit Cards, COD<br>and other channels
+                        to<br>facilitate your<br>buying experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="money" style="text-align: center; ">
+        <p style="font-size: 50px; color: #606062; margin-bottom: 70px;">Make More Money</p>
+        <p style="font-size: 25px; color: #363435; font-weight: bold; margin-bottom: 55px;">Business Associates who
+            partner with us make more money, save more time and<br>have happier customer base because of the integration
+            in buying and selling chain.</p>
+        <p style="font-size: 20px; color: #97989a; margin-bottom: 90px;">Over 30+30 Business Associates and their sales
+            representatives have access to<br>Lapalap BA Dashboard.You can sign up or all or a select few of your
+            employees on our<br>site. And with customizable view option, you get to decide what they see on Lapalap.</p>
+        <p style="font-size: 20px; color: #353535; margin-bottom: 50px;">If you are a Lapalap customer and ready ton
+            become a BA, get in touch with us today.</p>
+        <a href="./feedback.html"><button
+                style="background-color: #a9cf46; color: #fefdfc; width: 210px; height: 55px; font-size: 22px; border: none; margin-bottom: 90px;">CONTACT
+                US</button></a>
+    </div>
+
+    <div style="width: 100%; background-color: #f5f5f5;  display: flex; height:500px;">
+        <div
+            style="width:500px; margin:0 100px 0 250px;display: flex;flex-flow: column;justify-content: center;line-height: 1.5em;">
+            <p style="color: #363435; font-size: 25px; font-weight: bold; margin-bottom: 12px;">Become a Business
+                Associate</p>
+
+            <p style="font-size: 20px; color: #97989a; margin-bottom: 70px;">Are you a Housewife, Teacher, College
+                Passout,<br>Freelancer, Job Seeker, Smart Worker, Bussiness<br>Minded Person, Enterpreneur, Opportunist
+                and<br>ready ton gain access Lapalap's product<br>lineup?<br>Then it's time to become a Lapalap Business
+                Associate.</p>
+            <button onclick="open_ba_popup()"
+                style="background-color: #201e1f; color: #fefefe; width: 250px; height: 60px; font-size: 25px;">APPLY
+                NOW</button>
+        </div>
+        <div style="width: 400px; margin: 0 250px 0 100px;display: flex;flex-flow: column;justify-content: center;">
+            <p style="color: #363435; font-size: 25px; font-weight: bold; margin-bottom: 12px;">Returning Users</p>
+            <p style="font-size: 20px; color: #97989a; margin-bottom: 70px;">Already have a Lapalap account? Go directly
+                to<br>our login page.And if you have forgotten your<br>username or password, <a>click here</a> instead.
+            </p>
+            <button
+                style="background-color: #201e1f; color: #fefefe; width: 192px; height: 60px; font-size: 25px;">LOGIN</button>
+        </div>
+
+
+    </div>
+
+    <div class="app-showcase">
+        <div class="app-screenshots">
+            <div class="screenshot-container">
+                <img class="rotateimg20" style="left: -200px;" src="./imgs/screenshot1.PNG" alt="" width="200px"
+                    height="360px">
+                <img class="rotateimg20" style="left: -70px" src="./imgs/screenshot2.PNG" alt="" width="200px"
+                    height="360px">
+                <img class="rotateimg20" style="left: 60px" src="./imgs/screenshot3.PNG" alt="" width="200px"
+                    height="360px">
+                <br><br>screenshots
+            </div>
+            <div class="app-buttons">
+                <button>PLAY STORE</button>
+                <button>APP STORE</button>
+            </div>
+
+        </div>
+        <div class="app-description">
+            <div>
+                <h1>In order to recieve Goods<br> at Low Price; SignUp or<br>Download the app</h1>
+                <div class="key-points">
+                    <div style="display: flex;"><span class="tick">&#10004</span><span>First in India to
+                            offer<br>Everithing
+                            at
+                            Low Price</span></div>
+                    <div><span class="tick">&#10004</span><span>Zero Waste Warehouses</span></div>
+                    <div><span class="tick">&#10004</span><span>100% Bio-Degradable Packing</span></div>
+                </div>
+
+                <div style="margin-top: 80px;">
+                    <button>CONTINUE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-join-section">
+        <div class="social-responsibility">
+            <h1>Our Social responsibility</h1>
+            <p>We are steadfast in improving livelihoods across the nation. Explore our initiatives and see how to
+                submit a
+                request for charity</p>
+            <button>APPLY NOW</button>
+        </div>
+        <div class="join-lapalap">
+            <h1>Join Lapalap</h1>
+            <p>We are growing pretty fast and alwats looking for exceptional people to join our team.<br>Know more about
+                the
+                careers and find the job that suits you best.</p>
+            <button style="padding: 14px 40px;">CAREERS</button>
+        </div>
+    </div>
+    <div class="signup-lapalap-news">
+        <p style="text-align: center; margin-bottom: 20px;">Sign up for Lapalap news</p>
+        <form action="">
+            <input type="text" placeholder="EMAIL">
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+    <div class="footer-links"
+        style="display: flex;padding: 48px 32px 30px 32px;justify-content: space-between; line-height: 2.4em;">
+        <div class="left-box" style="display: flex;">
+            <div class="resurces-links" style="margin-right:50px">
+                <p class="heading">Resources</p>
+                <a href="">Apply to be a S. Business Associate</a>
+                <a href="./BA.html">Apply to be a Business Associate</a>
+                <a href="">Apply to be a Supplier</a>
+                <a href="./feedback.html">Contact Us</a>
+                <a href="">Subscribe to Lapalap</a>
+            </div>
+            <div class="about-our-business">
+                <p class="heading">About Our Business</p>
+                <a href="">Lapalap Careers</a>
+                <a href="./partners.html">Locations-Current Serving Area</a>
+                <a href="">Newsroom</a>
+                <a href="">Social Responsibility</a>
+                <a href="">Lapalap leadership Team</a>
+            </div>
+        </div>
+        <div class="right-box" style="display: flex;">
+            <div class="see-brands" style="margin-right:70px">
+                <p class="heading">See Brands</p>
+                <a href="">New Products</a>
+                <a href="">Pre-Book Upcoming Products</a><br>
+                <a href="" class="color-highlight">Hot Locations open for SBA</a>
+                <a href="" class="color-highlight">Hot Locations open for BA</a>
+            </div>
+            <div class="shop-by-explore">
+                <p class="color-highlight heading">Shop/But/Explore Lapalap</p>
+                <a href="">COVID-19 Food & Packaging Essentials</a>
+                <a href="" style="color:#4f4d4e">Lapalap & COVID-19</a><br>
+                <div class="address">
+                    <p>Radeus Ventures Private Limited</p>
+                    <p>CIN:U74900CH2015PTC035747</p>
+                    <p>Registered Office: 448, Level1,</p>
+                    <p>Sector 15, Chandigarh 160015, INDIA</p>
+                    <p>feedback@lapalap.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="display: flex; border-top: 1px solid #e7e8e9;position: relative;">
+        <p style="color: #969799; padding: 32px 48px 0 48px; font-size: 18px;">
+            © 2007-2020 Lapalap. All rights reserved.
+            <span style="color: #1e4c74">Powered by RVPL</span>
+        </p>
+        <div
+            style=" position: absolute; top: 0; width: 100%; display: flex; align-items: center; justify-content: center; ">
+            <div style="display: flex; align-items: center; margin-top: -33px; background: #fefefe; padding: 0 10px;">
+                <a href="index.html"><img src="./imgs/brand-logo.png" alt="" width="62px" /></a>
+                <h2 style="padding-left: 15px; font-size: 26px; font-weight: 600;">ALWAYS @ LOWEST PRICE</h2>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
