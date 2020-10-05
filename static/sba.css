@@ -46,17 +46,6 @@ span.gt_sexy{
 
 @media (max-width:391px){
     .ing-tyx-sba span:nth-child(1){
-        font-size: 28px !important;
-    }
-    .ing-tyx-sba span:nth-child(3){
-       font-size: 28px !important;
-    }
-    span.gt_sexy{
-        font-size: 28px !important;
-    }
-}
-@media (max-width:391px){
-    .ing-tyx-sba span:nth-child(1){
         font-size: 24px !important;
     }
     .ing-tyx-sba span:nth-child(3){
