@@ -31,6 +31,12 @@ span.gt_sexy{
        font-size: 37px !important;
     }
 }
+@media(max-width:767px){
+    span.gt_sexy{
+        margin: 20px 0 !important;
+    }
+}
+
 
 @media (max-width:464px){
     .ing-tyx-sba span:nth-child(1){
@@ -53,6 +59,17 @@ span.gt_sexy{
     }
     span.gt_sexy{
         font-size: 26px !important;
+    }
+}
+@media (max-width:351px){
+    .ing-tyx-sba span:nth-child(1){
+        font-size: 22px !important;
+    }
+    .ing-tyx-sba span:nth-child(3){
+       font-size: 22px !important;
+    }
+    span.gt_sexy{
+        font-size: 22px !important;
     }
 }
 .digital-lapalap h1 {
