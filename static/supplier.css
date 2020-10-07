@@ -1,0 +1,550 @@
+*{
+    font-family: Calibri;
+}
+#supplier-hero-container{
+    width: 100%;
+    overflow: hidden;
+}
+.section-button{
+    border-radius: 2px;
+}
+#supplier-hero-container img{
+    width: 100%;
+}
+#national-supplier{
+    background: #4298be;
+    padding: 2em 4em 1em 4em;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fefefe;
+}
+#national-supplier .main-text{
+    font-size: 54px;
+    color: #f7cb2b;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+#national-supplier .secondary-text{
+    font-size: 28px;
+    color: #fcf114;
+    font-weight: 600;
+    margin-top: 80px;
+}
+
+#national-supplier a{
+    margin-top: -70px;
+    text-decoration: none;
+    color: #fefefe;
+    background: #f08534;
+    float: right;
+    padding: 15px 32px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* Why Lapalap */
+#why-lapalap{
+    text-align: center;
+    padding: 42px 20px;
+}
+#why-lapalap h1{
+    font-size: 52px;
+    color:#606062;
+}
+
+#why-lapalap .section-description{
+    font-size: 20px;
+    margin: 0 auto;
+    color: #97989a;
+    padding: 50px 0;
+    font-weight: 500;
+}
+
+#why-lapalap .section-description p{
+    margin: 0 0 24px;
+}
+
+#why-lapalap .section-description p:nth-child(1){
+    color: #f08635;
+    font-size: 22px;
+}
+
+#why-lapalap hr{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#why-lapalap .support-links{
+    padding: 40px 0;
+}
+#why-lapalap .support-links div a:nth-child(1){
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 10px;
+    color: #363435;
+}
+#why-lapalap .support-links div a:nth-child(2){
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 20px;
+    color: #363435;
+}
+#why-lapalap .support-links div a:nth-child(2) img{
+    margin-right: 4px;
+    margin-top: -12px;
+    width: 24px;
+    height: 20px;
+}
+
+
+/* benefites  */
+#benefits-supplier{
+    text-align: center;
+    padding-bottom: 100px;
+}
+#benefits-supplier>h1{
+    font-size: 52px;
+    color:#606062;
+    margin-bottom: 60px;
+}
+
+#benefits-supplier .row{
+    display: flex;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+#benefits-supplier .row .col{
+    flex: 1 1 33%;
+}
+
+#benefits-supplier .row .col h1{
+    margin: 5px 15px 15px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #f08534;
+}
+#benefits-supplier .row .col:nth-child(2) h1{
+    color: #363435;
+}
+#benefits-supplier .row .col img{
+    height: 70px;
+}
+
+#benefits-supplier .row .col p{
+    color:#97989a;
+    width: 310px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+#benefits-supplier a{ 
+    text-decoration: none;
+    color: #fefefe;
+    background: #f08534;
+    padding: 12px 62px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* Testimonial video and image */
+#testimonial-video{
+    padding:0;
+}
+#testimonial-video> div{
+    width: 100%;
+    display: flex;
+    height: calc(100vw/4);
+}
+#testimonial-video >div>div{
+    width: 50%;
+    height: 100%;
+}
+#testimonial-video .video{
+    background:#4298be;
+}
+#testimonial-video .image{
+    background: #fcf114;
+}
+#testimonial-video .video-description, #testimonial-video .image-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#testimonial-video .video-description >div, #testimonial-video .image-description >div{
+    width: 60%;
+}
+#testimonial-video h1{
+    font-size: 23px;
+    font-weight: 600;
+    color: #363435;
+}
+#testimonial-video h1 >span{
+    color: #f08534;
+}
+#testimonial-video p{
+    font-size: 18px;
+    color: #97989a;
+    margin-bottom: 60px;
+}
+#testimonial-video a{
+    font-size: 24px;
+    font-weight: 600;
+    padding:12px 55px;
+    color: #5bc6d0;
+    background:#201e1f;
+    text-decoration: none;
+}
+
+#testimonial-video .image-description a{
+    padding:12px 15px;
+    color: #fefefe;
+}
+#checklist-section{
+    padding: 140px 20px 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#checklist-section .checklist-container{
+    width: 300px;
+    text-align: center;
+}
+
+#checklist-section img{
+    width: 160px;
+}
+
+#checklist-section h1{
+    font-size: 24px;
+    color: #363435;
+    margin-top:70px;
+    margin-bottom:30px;
+}
+#checklist-section p{
+    font-size: 18px;
+    color: #97989a;
+    margin-bottom: 70px;
+}
+#checklist-section div:nth-child(2) p{
+    margin-bottom: 45px;
+}
+
+#checklist-section a{
+    font-size: 24px;
+    font-weight: 600;
+    padding:10px 30px;
+    color: #fefefe;
+    text-decoration: none;
+    background:#201e1f;
+}
+
+/* Become supplier and locations */
+#supplier-n-location{
+    background: #f5f5f5;
+    border-top: 0.5px solid #97989ab7;
+    border-bottom: 0.5px solid #97989ab7;
+    display: flex;
+    padding: 60px 20px;
+    justify-content: space-between;
+}
+#supplier-n-location > div{
+    width: 330px;
+}
+
+#supplier-n-location h1{
+    font-size: 24px;
+    color: #363435;
+    font-weight: 600;
+}
+#supplier-n-location p{
+    font-size: 18px;
+    color: #97989a;
+    margin-bottom: 40px;
+}
+#supplier-n-location a{
+    font-size: 24px;
+    background: #201e1f;
+    color: #fefefe;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#supplier-onboarding{
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#supplier-onboarding h1{
+    font-size: 50px;
+    color: #606062;
+    margin-bottom: 40px;
+}
+
+#supplier-onboarding p.question{
+    font-size: 22px;
+    color: #363435;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#supplier-onboarding p{
+    font-size: 18px;
+    color: #97989a;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+#supplier-onboarding a{
+    color: #fefefe;
+    background:#201e1f;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 40px;
+    font-weight: 600;
+}
+@media(max-width:1092px){
+    #testimonial-video p{
+        margin-bottom: 25px;
+    }
+}
+@media(min-width:1120px){
+    #supplier-hero-container img{
+        height: 100vh;
+    }
+}
+@media (max-width:992px){
+    
+    #national-supplier{
+        padding: 2em 2em 1em 2em;
+        font-size: 22px;
+    }
+    #national-supplier .main-text{
+        font-size: 48px;
+    }
+    
+    #national-supplier .secondary-text{
+        font-size: 26px;
+    }
+    #national-supplier a{
+        margin-top: 10px;
+    }
+    #benefits-supplier .row .col{
+        flex: 1 1 33%;
+        margin: 20px 0;
+    }
+    #testimonial-video .video-description >div, #testimonial-video .image-description >div{
+        width: 80%;
+    }
+}
+
+@media (max-width:767px){
+    
+    #national-supplier{
+        padding: 2em 1em 1em 1em;
+        font-size: 20px;
+    }
+    #national-supplier .main-text{
+        font-size: 40px;
+    }
+    
+    #national-supplier .secondary-text{
+        font-size: 22px;
+    }
+    #why-lapalap h1{
+        font-size: 40px;
+    }
+        
+    #why-lapalap .section-description{
+        font-size: 18px;
+    }
+
+    #why-lapalap .section-description p:nth-child(1){
+        font-size: 20px;
+    }
+    #benefits-supplier>h1{
+        font-size: 40px;
+    }
+    #testimonial-video> div{
+        height: auto;
+    }
+    #testimonial-video .video-section{
+        flex-flow: column;
+    }
+    #testimonial-video .image-section{
+        flex-flow: column-reverse;
+    }
+    #testimonial-video >div .video, #testimonial-video >div .image{
+        width: 100%;
+        height: calc(100vw/2);
+    }
+    #testimonial-video .video-description, #testimonial-video .image-description{
+        width: 100%;
+        padding:0 0 30px 0;
+    }
+    #testimonial-video .video-description >div, #testimonial-video .image-description >div{
+        width: 60%;
+    }
+    #checklist-section{
+        flex-flow: column;
+        align-items: center;
+    }
+    #checklist-section div:nth-child(1){
+        margin-bottom: 70px;
+    }
+    #supplier-n-location{
+        flex-flow: column;
+        align-items: center;
+    }
+    #supplier-n-location div:nth-child(1){
+        margin-bottom: 50px;
+    }
+
+    #supplier-onboarding h1{
+        font-size: 40px;
+    }
+    
+    #supplier-onboarding p.question{
+        font-size: 20px;
+    }
+    
+    #supplier-onboarding p{
+        font-size: 16px;
+        width: 520px;
+    }
+}
+
+@media(min-width:640px){
+    #why-lapalap .section-description{
+        width: 586px;
+    }
+}
+
+@media (max-width:572px){
+    #supplier-onboarding p{
+        width: auto;
+    }
+}
+@media (max-width:512px){
+    
+    #national-supplier{
+        padding: 2em .5em 1em .5em;
+        font-size: 18px;
+    }
+    #national-supplier .main-text{
+        font-size: 30px;
+    }
+    
+    #national-supplier .secondary-text{
+        font-size: 20px;
+    }
+    #national-supplier a{
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    #why-lapalap h1{
+        font-size: 32px;
+    }
+        
+    #why-lapalap .section-description{
+        font-size: 16px;
+    }
+
+    #why-lapalap .section-description p:nth-child(1){
+        font-size: 18px;
+    }
+
+    #why-lapalap .support-links{
+        padding: 25px 0;
+    }
+
+    #why-lapalap .support-links div a:nth-child(2){
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    #why-lapalap .support-links div a:nth-child(2) img{
+        margin-right: 2px;
+        margin-top: -8px;
+        width: 18px;
+        height: 14px;
+    }
+    #why-lapalap hr{
+        width: 90%;
+    }
+    #benefits-supplier>h1{
+        font-size: 32px;
+    }
+    #benefits-supplier a{ 
+        padding: 10px 42px;
+        font-size: 22px;
+    }
+    #testimonial-video .video-description >div, #testimonial-video .image-description >div{
+        width: 80%;
+    }
+    #testimonial-video a{
+        font-size: 22px;
+        padding: 8px 38px;
+    }
+    #testimonial-video .image-description a {
+        padding: 8px 15px;
+    }
+    #supplier-onboarding h1{
+        font-size: 32px;
+    }
+    #supplier-hero-container img{
+        width: 120%;
+    }
+    
+}
+
+@media(max-width:350px){
+    #benefits-supplier .row {
+        margin-bottom: 50px;
+    }
+    #benefits-supplier .row .col p{
+        width: 250px;
+        font-size: 16px;
+    }
+    #benefits-supplier .row .col h1{
+        font-size: 22px;
+
+    }
+    #benefits-supplier a{ 
+        padding: 8px 32px;
+        font-size: 20px;
+    }
+    
+    #checklist-section .checklist-container{
+        width: 270px;
+    }
+
+    #checklist-section img{
+        width: 140px;
+    }
+
+    #checklist-section h1{
+        font-size: 22px;
+    }
+    #checklist-section p{
+        font-size: 16px;
+    }
+    #checklist-section a{
+        font-size: 22px;
+        padding:8px 22px;
+
+    }
+
+    #supplier-n-location > div {
+        width: auto;
+    }
+    #supplier-n-location a {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+    #supplier-onboarding a{
+        font-size: 22px;
+        padding: 8px 30px;
+    }
+}
