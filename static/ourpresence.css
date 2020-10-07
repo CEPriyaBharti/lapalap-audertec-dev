@@ -26,13 +26,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+#maps>div{
+    margin: 20px;
+}
 #chandigarh-map{
     width: 360px;
     padding:40px 0;
 }
 
-#punchkula-map ,#mohali-map{
+#panchkula-map ,#mohali-map{
     width: 280px;
     padding:40px 0;
 }
@@ -49,6 +51,9 @@
     height: 60px;
     text-align: center;
     padding: 20px 0;
+}
+.map-row .four-box{
+    width: 160px;
 }
 
 .map-name{
@@ -91,3 +96,69 @@
     line-height: 1.5em;
     padding: 20px 0;
 }
+
+
+
+
+  @media (max-width: 767px) {
+    #maps{
+        padding: 100px 40px 40px 40px;
+    }
+    .maps-paragraphs p{
+        width: 80%;
+    }
+    .maps-msg {
+        font-size: 18px;
+    }
+  }
+
+  @media(max-width: 512px) {
+    
+    #maps{
+        font-size: 12px;
+    }
+    .map-row>div {
+        width: 30px;
+        height: 50px;
+    }
+    .map-row .four-box{
+        width: 120px;
+    }
+    #chandigarh-map {
+        width: 270px;
+    }
+    #panchkula-map ,#mohali-map{
+        width: 210px;
+    }
+    .chandigarh-name{
+        width:170px !important;
+    }
+    
+    .panchkula-name, .mohali-name{
+        width:150px !important;
+        padding-left: 0 !important;
+    }
+    #maps {
+        padding: 100px 10px 40px 10px;
+    }
+    .maps-msg {
+        font-size: 16px;
+    }
+    #our-presence > h1 {
+        font-size: 32px;
+    }
+    
+  }
+
+  @media(max-width: 400px) {
+    #maps {
+        padding: 100px 0px 40px 0px;
+    }
+    .maps-paragraphs p{
+        font-size: 16px;
+        width: 90%;
+    }
+    #maps>div {
+        margin: 10px;
+    }
+  }
