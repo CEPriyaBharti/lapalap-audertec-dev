@@ -1,7 +1,7 @@
 *{
     font-family: calibri;
     letter-spacing: .2px;
-    line-height: 1.5;
+    line-height: 1.5 !important;
 }
 
 hr{
