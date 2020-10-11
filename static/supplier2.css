@@ -145,13 +145,14 @@
         padding-left: 25px;
     }
 }
-
+@media(min-width:992px){
+    #phase-1 .steps, #phase-2 .steps,#phase-4 .timeline, #contact-n-bs .contact{
+        padding-left: 50px;
+    }
+}
 @media(min-width:900px){
     #phase-1 .container,#phase-2 .container ,#phase-4{
         width: 900px;
-    }
-    #phase-1 .steps, #phase-2 .steps,#phase-4 .timeline, #contact-n-bs .contact{
-        padding-left: 50px;
     }
 }
 
