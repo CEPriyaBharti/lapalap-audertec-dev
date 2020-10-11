@@ -1,0 +1,302 @@
+*{
+    font-family: Calibri;
+    letter-spacing: 0.2px;
+    line-height: 1.5 !important;
+    box-sizing: border-box;
+}
+.main-heading{
+    font-size: 50px;
+    color:#606062;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 50px;
+    line-height: 1.3 !important;
+}
+.sub-heading{
+    color:#363435;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.regular-para{
+    font-size: 18px;
+    color: #97989a;
+}
+.section-button{
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px 50px;
+    background: #211e1f;
+    color: #fefefe;
+    font-weight: 600;
+    border-radius: 2px;
+}
+.section-button:hover{
+    color: #fefefe;
+    text-decoration: none;
+    padding: 12px 52px;
+
+}
+
+#onboarding-section{
+    text-align: center;
+    padding: 60px 0;
+}
+#onboarding-section p.sub-heading{
+    margin-bottom: 0;
+}
+#onboarding-section p.regular-para{
+    width: 640px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+#onboarding-steps{
+    width: 100%;
+}
+#onboarding-steps hr{
+    max-width: 650px;
+    margin: 0 auto;
+    border-bottom: 1px solid #aaabaf;
+}
+
+    /* Phase 1 & 2*/
+#phase-1{
+    background: #eef2f1;
+}
+
+#phase-1{
+    width: 100%;
+    padding: 60px 0;
+}
+#phase-2{
+    width: 100%;
+    padding: 80px 0;
+}
+
+#phase-1 .regular-para,#phase-2 .regular-para{
+    width: 376px;
+}
+#phase-1 .steps .regular-para, #phase-2 .steps .regular-para{
+    color: #363435;
+    margin: 0;
+}
+#phase-2 .steps .regular-para{
+    margin-bottom:30px;
+}
+#phase-1 .regular-para span{
+    color: #3f3f95;
+}
+
+
+#phase-3{
+    padding: 60px 0 80px;
+    text-align: center;
+
+}
+#phase-3 .regular-para{
+    max-width: 600px;
+    margin: 0 auto 10px;
+    padding: 0 10px;
+}
+
+
+#phase-4{
+    padding:80px 0;
+}
+#phase-4 .row{
+    width: 100%;
+}
+#phase-4 .launch .regular-para{
+    width:355px;
+}
+#phase-4 .timeline .regular-para{
+    width:490px;
+    margin-bottom: 30px;
+}
+
+#contact-n-bs{
+    background: #eef2f1;
+    padding:60px 0;
+    width: 100%;
+}
+#contact-n-bs .regular-para{
+    margin-bottom: 40px;
+}
+#contact-n-bs .contact .regular-para{
+    margin-bottom: 60px;
+}
+#contact-n-bs .regular-para{
+    width: 332px;
+}
+
+#new-sup-btn{
+    padding:60px 0;
+    text-align: center;
+}
+#new-sup-btn .section-button{
+    background:#22575d;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+@media(min-width:1037px){
+    #phase-4{
+        width: 1036px !important;
+        padding-left: 25px;
+    }
+}
+
+@media(min-width:900px){
+    #phase-1 .container,#phase-2 .container ,#phase-4{
+        width: 900px;
+    }
+    #phase-1 .steps, #phase-2 .steps{
+        padding-left: 50px;
+    }
+}
+
+@media(max-width:992px){    
+    #phase-4 .row >div{
+        margin:50px 0 50px 60px;
+    }
+}
+
+@media(max-width:767px){
+    .main-heading{
+        font-size: 40px;
+    }
+    .sub-heading{
+        font-size: 22px;
+    }
+    .regular-para{
+        font-size: 17px;
+    }
+
+    #onboarding-steps hr{
+        max-width:80%;
+    }
+
+    #onboarding-section p.regular-para{
+        width: 591px;
+    }
+
+    /* Phase 1 */
+
+    #phase-1 .row>div, #phase-2 .row>div{
+        width: 500px;
+        margin: 50px auto;
+    }
+
+    #phase-1 .regular-para, #phase-2 .regular-para {
+        width: 355px;
+    }
+
+
+    #phase-4 .launch .regular-para{
+        width:333px;
+    }
+    #phase-4 .timeline .regular-para{
+        width:477px;
+    }
+
+
+    #contact-n-bs{
+        padding-left: 60px;
+    }
+    #contact-n-bs .row >div{
+        margin: 50px 0;
+    }
+}
+
+@media(max-width:592px){
+    .main-heading{
+        font-size: 32px;
+    }
+    .sub-heading{
+        font-size: 20px;
+    }
+    .regular-para{
+        font-size: 16px;
+    }
+    .section-button {
+        font-size: 22px;
+        padding: 8px 40px;
+    }
+    .section-button:hover{
+        color: #fefefe;
+        text-decoration: none;
+        padding: 10px 42px;
+    
+    }
+
+    #onboarding-section p.regular-para{
+        width: auto;
+        padding: 0 20px;
+    }
+
+    /* Phase 1 */
+    #phase-1 .row>div, #phase-2 .row>div{
+        width: 340px;
+        margin: 50px auto;
+    }
+
+    #phase-1 .regular-para, #phase-2 .regular-para {
+        width: 334px;
+    }
+
+
+    #phase-4 .launch .regular-para{
+        width:315px;
+    }
+    #phase-4 .timeline .regular-para{
+        width:450px;
+    }
+
+    #contact-n-bs{
+        padding-left: 0;
+    }
+}
+
+@media(max-width:500px){
+    #phase-4{
+        padding-left: 0;
+    }
+    #phase-4 .timeline .regular-para{
+        width:auto;
+    }
+    #phase-4 .row >div{
+        margin:50px 20px;
+    }
+}
+
+@media(max-width:355px){
+    #phase-1 .row>div, #phase-2 .row>div{
+        width: auto;
+        margin: 50px 0;
+    }
+
+    #phase-4 .row >div{
+        margin:50px 10px;
+    }
+
+    #phase-1 .regular-para, #phase-2 .regular-para{
+        width: auto;
+    }
+    #phase-4 .launch .regular-para{
+        width:auto;
+    }
+    #contact-n-bs .regular-para{
+        width: auto;
+    }
+    #new-sup-btn .section-button{
+        padding:8px 20px;
+
+    }
+}
+/*para #97989a */
+
+/* purple text #3e4095 */
+ /* button back #201e1f */
+/* back #eef2f1 */
+
+/* last button #22575d */
